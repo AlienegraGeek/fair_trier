@@ -52,27 +52,13 @@
                   "child": {
                     "className": "Text",
                     "pa": [
-                      "#(_count = $_count)"
+                      "#(count = $_count)"
                     ]
                   }
                 }
               },
               {
-                "className": "Padding",
-                "na": {
-                  "padding": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 20
-                    }
-                  },
-                  "child": {
-                    "className": "Text",
-                    "pa": [
-                      "if _count % 2 == 1,  update image !"
-                    ]
-                  }
-                }
+                "className": "ComposerWidget"
               }
             ]
           }

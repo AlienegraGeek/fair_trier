@@ -1,0 +1,57 @@
+{
+  "className": "ListView.builder",
+  "na": {
+    "itemCount": 5,
+    "itemBuilder": {
+      "className": "GestureDetector",
+      "na": {
+        "child": {
+          "className": "Padding",
+          "na": {
+            "padding": {
+              "className": "EdgeInsets.fromLTRB",
+              "pa": [
+                10,
+                10,
+                10,
+                0
+              ]
+            },
+            "child": {
+              "className": "Container",
+              "na": {
+                "alignment": "#(Alignment.center)",
+                "height": 80,
+                "color": "#(Colors.grey)",
+                "child": {
+                  "className": "Text",
+                  "pa": [
+                    "#(data - $index)"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "onTap": {
+          "pa": [
+            {
+              "className": "MaterialPageRoute",
+              "na": {
+                "builder": {
+                  "className": "FairDemoPage",
+                  "na": {
+                    "data": {
+                      "title": "动态Page"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "methodMap": {}
+}

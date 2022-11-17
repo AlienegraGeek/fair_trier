@@ -1,6 +1,8 @@
 import 'package:fair/fair.dart';
 import 'package:flutter/material.dart';
 
+import 'component/composer_widget.dart';
+
 @FairPatch()
 class FairDemoPage extends StatefulWidget {
   // var fairProps;
@@ -9,7 +11,7 @@ class FairDemoPage extends StatefulWidget {
   //   fairProps = data;
   // }
 
-  FairDemoPage({required Key key, this.data}) : super(key: key) {
+  FairDemoPage({Key? key, this.data}) : super(key: key) {
     title = data['title'];
   }
 
@@ -68,10 +70,7 @@ class _FairDemoPageState extends State<FairDemoPage> {
               padding: EdgeInsets.only(top: 20),
               child: Text('count = $_count'),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: 20),
-              child: Text('如果count % 2 == 1,  更换图片 !'),
-            ),
+            ComposerWidget(),
           ],
         ),
       ),
